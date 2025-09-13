@@ -18,6 +18,6 @@ export const appRouter = createBrowserRouter([
     }
 ],
 {
-    basename: '/pokedex-tita-media/'
+    basename: '/pokedex-tita-media'
 }
 )
