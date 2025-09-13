@@ -2,6 +2,21 @@ import { gql } from "@apollo/client";
 import { useQuery } from "@apollo/client/react";
 import { useParams } from "react-router";
 
+type POKEMONS = {
+  pokemon: Array<Pokemon>
+}
+
+type Pokemon = {
+  name: string;
+  id: number;
+  weight: number;
+  height: number;
+  pokemontypes: Array<any>;
+  pokemonstats: Array<any>;
+  pokemonmoves: Array<any>;
+  pokemonsprites: Array<any>;
+}
+
 export const PokemonPage = () => {
   const { id } = useParams();
 
@@ -37,7 +52,7 @@ export const PokemonPage = () => {
       }
   `;
 
-  const { data, loading, error } = useQuery(QUERY_GET_POKEMON_BY_ID);
+  const { data, loading, error } = useQuery<POKEMONS>(QUERY_GET_POKEMON_BY_ID);
 
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error :(</p>;
@@ -52,11 +67,11 @@ export const PokemonPage = () => {
     previousPokemon = 0
   }
 
-  console.log(data);
-
   return (
     <>
-      <div className="pokemon">
+      {
+        data &&
+        <div className="pokemon">
         <img className="pokemon__img-shadow" src="/assets/images/pokeball.svg" alt="Pokeball" />
         <div className="pokemon__header">
           <a href="/">
@@ -164,6 +179,7 @@ export const PokemonPage = () => {
           </div>
         </div>
       </div>
+      }
     </>
   )
 }
