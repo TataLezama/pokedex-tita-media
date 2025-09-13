@@ -72,10 +72,10 @@ export const PokemonPage = () => {
       {
         data &&
         <div className="pokemon">
-        <img className="pokemon__img-shadow" src="/assets/images/pokeball.svg" alt="Pokeball" />
+        <img className="pokemon__img-shadow" src="/pokedex-tita-media/assets/images/pokeball.svg" alt="Pokeball" />
         <div className="pokemon__header">
           <a href="/">
-            <img src="/assets/images/arrow_back.svg" alt="arrow back" />
+            <img src="/pokedex-tita-media/assets/images/arrow_back.svg" alt="arrow back" />
           </a>
           <h1>{data.pokemon[0].name}</h1>
           <span className="pokemon__id">#{data.pokemon[0].id > 9 ? `0${data.pokemon[0].id}` : `00${data.pokemon[0].id}`}</span>
@@ -84,12 +84,12 @@ export const PokemonPage = () => {
           <img src={data.pokemon[0].pokemonsprites[0].sprites.front_default} alt={data.pokemon[0].name} />
           <a
               className={ previousPokemon !== 0 ? "arrow pokemon__button-previous" : "arrow pokemon__button-previous disabled" }
-              href={`/pokemon/${previousPokemon}`}
+              href={`/pokedex-tita-media/pokemon/${previousPokemon}`}
               >
-            <img src="/assets/images/chevron_left.svg" alt="previous pokemon" />
+            <img src="/pokedex-tita-media/assets/images/chevron_left.svg" alt="previous pokemon" />
           </a>
-          <a className="arrow pokemon__button-next" href={`/pokemon/${nextPokemon}`}>
-            <img src="/assets/images/chevron_right.svg" alt="next pokemon" />
+          <a className="arrow pokemon__button-next" href={`/pokedex-tita-media/pokemon/${nextPokemon}`}>
+            <img src="/pokedex-tita-media/assets/images/chevron_right.svg" alt="next pokemon" />
           </a>
         </div>
         <div className="pokemon__info">
@@ -107,12 +107,12 @@ export const PokemonPage = () => {
             <ul>
               <li>
                 <div>
-                  <img src="/assets/images/weight.svg" alt="Weight" />{data.pokemon[0].weight} kg
+                  <img src="/pokedex-tita-media/assets/images/weight.svg" alt="Weight" />{data.pokemon[0].weight} kg
                 </div>
                 <small>Weight</small>
                 </li>
               <li>
-                <img src="/assets/images/straighten.svg" alt="Height" />{data.pokemon[0].height} m
+                <img src="/pokedex-tita-media/assets/images/straighten.svg" alt="Height" />{data.pokemon[0].height} m
                 <small>Height</small>
               </li>
               <li>

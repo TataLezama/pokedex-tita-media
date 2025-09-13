@@ -5,7 +5,7 @@ export default function LogotypeApp() {
     <>
       <div className="logotype">
         <div className="logotype__content">
-          <img src="/assets/images/pokeball.svg" alt="Pokeball" />
+          <img src="/pokedex-tita-media/assets/images/pokeball.svg" alt="Pokeball" />
           <h1>Pokédex</h1>
         </div>
         <FavoriteApp />

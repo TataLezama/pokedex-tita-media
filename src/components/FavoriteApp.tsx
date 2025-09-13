@@ -3,7 +3,7 @@ export default function FavoriteApp() {
     <>
       <div className="favorite">
         <a href="/favorites" title="go to favorites page">
-          <img src="/assets/images/heart.svg" alt="Favorite" />
+          <img src="/pokedex-tita-media/assets/images/heart.svg" alt="Favorite" />
         </a>
       </div>
     </>

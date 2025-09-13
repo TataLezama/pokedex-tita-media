@@ -32,15 +32,15 @@ export default function SearchApp() {
       <div className="search">
         <input type="text" placeholder="Search" />
         <button className="search__button">
-            <img src="/assets/images/search.svg" alt="icon search" />
+            <img src="/pokedex-tita-media/assets/images/search.svg" alt="icon search" />
         </button>
         <div className="search-filter">
           <button
             className="search-filter__button"
             onClick={toggleClass}
             >
-              <img className={ nameActive ? "active" : "" } src="/assets/images/text_format.svg" alt="icon text format" />
-              <img className={ numberActive ? "active" : "" } src="/assets/images/tag.svg" alt="icon tag" />
+              <img className={ nameActive ? "active" : "" } src="/pokedex-tita-media/assets/images/text_format.svg" alt="icon text format" />
+              <img className={ numberActive ? "active" : "" } src="/pokedex-tita-media/assets/images/tag.svg" alt="icon tag" />
           </button>
           <nav className={ isActive ? "search-filter__nav active" : "search-filter__nav" }>
               <span className="search-filter__nav-title">Sort by:</span>

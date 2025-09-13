@@ -32,8 +32,8 @@ export default function Card({ name, number, imageUrl, favorite }: CardProps) {
             <button 
             onClick={() => toogleFavorite(number)}
             className={`card__favorite ${isFavorite ? "active" : ""}`}>
-                <img className={isFavorite ? "active" : ""} src="/assets/images/heart.svg" alt="heart" title="remove to favorites" />
-                <img className={!isFavorite ? "active" : ""} src="/assets/images/heart_line.svg" alt="heart line" title="add to favorites" />
+                <img className={isFavorite ? "active" : ""} src="/pokedex-tita-media/assets/images/heart.svg" alt="heart" title="remove to favorites" />
+                <img className={!isFavorite ? "active" : ""} src="/pokedex-tita-media/assets/images/heart_line.svg" alt="heart line" title="add to favorites" />
             </button>
             <a href={`/pokemon/${number}`}></a>
             <span className="card__number">#{ number > 9 ? `0${number}` : `00${number}` }</span>
