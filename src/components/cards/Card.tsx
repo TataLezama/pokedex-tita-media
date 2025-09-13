@@ -35,7 +35,7 @@ export default function Card({ name, number, imageUrl, favorite }: CardProps) {
                 <img className={isFavorite ? "active" : ""} src="/pokedex-tita-media/assets/images/heart.svg" alt="heart" title="remove to favorites" />
                 <img className={!isFavorite ? "active" : ""} src="/pokedex-tita-media/assets/images/heart_line.svg" alt="heart line" title="add to favorites" />
             </button>
-            <a href={`/pokemon/${number}`}></a>
+            <a href={`/pokedex-tita-media/pokemon/${number}`}></a>
             <span className="card__number">#{ number > 9 ? `0${number}` : `00${number}` }</span>
             <img className="card__image" src={imageUrl} alt={name} />
             <div className="card__info">
