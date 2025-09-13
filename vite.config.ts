@@ -3,6 +3,6 @@ import react from '@vitejs/plugin-react-swc'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: 'https://tatalezama.github.io/pokedex-tita-media/',
   plugins: [react()],
+  base: 'https://tatalezama.github.io/pokedex-tita-media/',
 })

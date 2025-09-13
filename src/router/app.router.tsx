@@ -16,4 +16,8 @@ export const appRouter = createBrowserRouter([
         path: '/favorites',
         element: <FavoritesPage />,
     }
-])
+],
+{
+    basename: '/pokedex-tita-media/'
+}
+)
